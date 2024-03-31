@@ -1,0 +1,13 @@
+
+  .custom-card {
+    background-color: #fdffe9;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .card-img {
+    border-radius: 20px;
+    /* height: 220px; */
+  }
+  

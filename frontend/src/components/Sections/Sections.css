@@ -1,0 +1,17 @@
+.section{
+margin: 10px auto !important;
+background-color: rgb(242, 244, 245);
+}
+.inside-card-wrapper{
+    display: flex;
+    overflow-x: scroll;
+    margin: 10px auto !important;
+
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.card-list{
+    margin-right: 5px !important;
+
+}

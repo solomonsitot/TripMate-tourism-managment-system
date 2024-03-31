@@ -1,0 +1,51 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+
+.logo-wrapper {
+  color: rgb(1, 46, 1);
+}
+
+.header-links-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.header-links-wrapper li,
+.ham-header-links li {
+  list-style: none;
+}
+.header-links {
+  text-decoration: none;
+  color: rgb(1, 46, 1);
+}
+.Green-btn {
+  text-decoration: none;
+  border: solid 1px rgb(1, 46, 1);
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: rgb(1, 46, 1);
+  color: white;
+}
+.Green-btn:hover {
+  background-color: white !important;
+  color: rgb(1, 46, 1) !important;
+}
+.ham-icon {
+  height: 30px;
+}
+.ham-header-links {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  padding: 10px;
+  border: solid 1px rgb(1, 46, 1) ;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+}
+.sm-header-links {
+  text-decoration: none;
+  color: rgb(1, 46, 1);
+}
