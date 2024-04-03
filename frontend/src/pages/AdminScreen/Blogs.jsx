@@ -9,10 +9,25 @@ function Blogs() {
   async function blogPost(e) {
     e.preventDefault();
     try {
+      const cdate = new Date();
+      const hour = cdate.getHours();
+      const min = cdate.getMinutes();
+      const formattedHour = hour % 12 || 12;
+  
+      let period = "AM";
+  
+      // Determine whether it's AM or PM
+      if (hour >= 12) {
+        period = "PM";
+      }
+  
+      // Convert to 12-hour format
+      const timeString = formattedHour + ":" + min + period;
       const formdata = new FormData();
-      formdata.append("blogTitle", blogTitle);
-      formdata.append("blogDesc", blogDesc);
-      console.log(formdata.blogTitle);
+      formdata.append("Blog_Title", blogTitle);
+      formdata.append("image", blogImage);
+      formdata.append("Blog_Description", blogDesc);
+      formdata.append("Blog_Time", timeString);
       await axios.post("http://localhost:8000/Admin/blogs/post", formdata);
     } catch (err) {
       console.log(err);

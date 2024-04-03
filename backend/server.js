@@ -19,9 +19,15 @@ app.use(
   "/Hotels",
   express.static(path.join(__dirname, "src", "public", "images", "Hotels"))
 );
+app.use(
+  "/Destinations",
+  express.static(
+    path.join(__dirname, "src", "public", "images", "Destinations")
+  )
+);
 app.use("/Admin", AdminRoutes);
 // app.use("/Hotels", HotelsRoutes);
-// app.use("/Users", UsersRoutes);
+app.use("/Users", UsersRoutes);
 // app.use("/TourGuides", TourGuidesRoutes);
 // app.use("/Shops", ShopsRoutes);
 

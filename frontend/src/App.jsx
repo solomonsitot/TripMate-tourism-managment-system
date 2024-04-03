@@ -9,20 +9,22 @@ import Agents from "./pages/AdminScreen/Agents";
 import Blogs from "./pages/AdminScreen/Blogs";
 function App() {
   return (
-    <div className="app-wrapper"><Routes>
-    <Route path="/">
-      <Route path="" element={<HomeScreen />} />
-      {/* <Route path="seeblogs" element={<Blogs />} /> */}
-      {/* <Route path="seeHotels" element={<Hotels />} /> */}
-      {/* <Route path="seeAgents" element={<Agents />} /> */}
-    </Route>
-    <Route path="/Admin">
-      <Route path="" element={<AdminScreen />} />
-      <Route path="seeblogs" element={<Blogs />} />
-      <Route path="seeHotels" element={<Hotels />} />
-      <Route path="seeAgents" element={<Agents />} />
-    </Route>
-  </Routes></div>
+    <div className="app-wrapper">
+      <Routes>
+        <Route path="/">
+          <Route path="" element={<HomeScreen />} />
+          {/* <Route path="seeblogs" element={<Blogs />} /> */}
+          {/* <Route path="seeHotels" element={<Hotels />} /> */}
+          {/* <Route path="seeAgents" element={<Agents />} /> */}
+        </Route>
+        <Route path="/Admin">
+          <Route path="" element={<AdminScreen />} />
+          <Route path="seeblogs" element={<Blogs />} />
+          <Route path="seeHotels" element={<Hotels />} />
+          <Route path="seeAgents" element={<Agents />} />
+        </Route>
+      </Routes>
+    </div>
   );
 }
 
