@@ -7,7 +7,7 @@ const DestinationSchema = new mongoose.Schema({
   },
   DestImage: {
     type: String,
-    required: true,
+    required: false,
   },
   DestDescription: {
     type: String,

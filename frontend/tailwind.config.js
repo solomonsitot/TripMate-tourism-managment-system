@@ -3,15 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      flex: {
+        cols: "0 0 auto",
+      },
       width: {
-        per70: "70%",
-        per90: "90%",
-      },
-      height: {
-        100: "400px",
-      },
-      margin: {
-        per5: "5%",
+        thirty: "30%",
       },
     },
   },

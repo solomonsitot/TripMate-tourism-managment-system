@@ -7,7 +7,7 @@ const BlogSchema = new mongoose.Schema({
   },
   BlogImage: {
     type: String,
-    required: true,
+    required: false,
   },
   BlogDescription: {
     type: String,
@@ -15,8 +15,8 @@ const BlogSchema = new mongoose.Schema({
   },
   BlogDate: {
     type: String,
-    required: true,
+    required: false,
   },
 });
-const Blogs = new mongoose.model("Blog", BlogSchema);
+const Blogs = new mongoose.model("blog", BlogSchema);
 module.exports = Blogs;
